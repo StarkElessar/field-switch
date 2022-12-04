@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Field Switcher</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <form class="switcher-form">
+        <div class="switcher-form__head">
+          <label class="switcher-form__label">
+            <input type="radio" name="category" value="starters" checked>
+            <span>For Starters</span>
+          </label>
+          <label class="switcher-form__label">
+            <input type="radio" name="category" value="experienced">
+            <span>For Experienced Traders</span>
+          </label>
+        </div>
+        <div class="switcher-form__category-row">
+          <span class="switcher-form__text-label">Capital:</span>
+          <label class="switcher-form__label">
+            <input type="radio" name="capital" value="10000" checked>
+            <span>$10,000</span>
+          </label>
+          <label class="switcher-form__label">
+            <input type="radio" name="capital" value="25000">
+            <span>$25,000</span>
+          </label>
+          <label class="switcher-form__label">
+            <input type="radio" name="capital" value="50000">
+            <span>$50,000</span>
+          </label>
+          <label class="switcher-form__label">
+            <input type="radio" name="capital" value="100000">
+            <span>$100,000</span>
+          </label>
+          <label class="switcher-form__label">
+            <input type="radio" name="capital" value="250000">
+            <span>$250,000</span>
+          </label>
+        </div>
+        <div class="switcher-form__body">
+          <ul class="switcher-form__list">
+            <li class="switcher-form__item" data-type="profit-share">
+              <div class="switcher-form__key">Profit share</div>
+              <div class="switcher-form__value">80%</div>
+            </li>
+            <li class="switcher-form__item" data-type="profit-target">
+              <div class="switcher-form__key">Profit target (Phase 1)</div>
+              <div class="switcher-form__value">10%</div>
+            </li>
+            <li class="switcher-form__item" data-type="time-limit">
+              <div class="switcher-form__key">Time limit</div>
+              <div class="switcher-form__value">None</div>
+            </li>
+            <li class="switcher-form__item" data-type="trading-limits">
+              <div class="switcher-form__key">Trading limits</div>
+              <div class="switcher-form__value">None</div>
+            </li>
+            <li class="switcher-form__item" data-type="trading-days">
+              <div class="switcher-form__key">Minimum Trading Days (Each phase)</div>
+              <div class="switcher-form__value">5 Days</div>
+            </li>
+            <li class="switcher-form__item" data-type="leverage">
+              <div class="switcher-form__key">Maximum leverage</div>
+              <div class="switcher-form__value">25:1</div>
+            </li>
+            <li class="switcher-form__item" data-type="platforms">
+              <div class="switcher-form__key">Platforms</div>
+              <div class="switcher-form__value">Binance Futures testnet</div>
+            </li>
+            <li class="switcher-form__item" data-type="overall-drawdown">
+              <div class="switcher-form__key">Maximum overall drawdown</div>
+              <div class="switcher-form__value">8%</div>
+            </li>
+            <li class="switcher-form__item" data-type="daily-drawdown">
+              <div class="switcher-form__key">Maximum daily drawdown</div>
+              <div class="switcher-form__value">4%</div>
+            </li>
+            <li class="switcher-form__item" data-type="fee">
+              <div class="switcher-form__key">Refundable fee</div>
+              <div class="switcher-form__value">
+                <span class="line">$129</span>  
+                <span class="gold">$99</span>
+              </div>
+            </li>
+            <li class="switcher-form__item" data-type="costs">
+              <div class="switcher-form__key">Reset Costs</div>
+              <div class="switcher-form__value">
+                10% Off
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

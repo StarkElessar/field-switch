@@ -1,0 +1,82 @@
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  background: #04040C;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+.switcher-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  // .switcher-form__head
+  &__head {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  // .switcher-form__label
+  &__label {
+  }
+  // .switcher-form__category-row
+  &__category-row {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  // .switcher-form__text-label
+  &__text-label {
+  }
+  // .switcher-form__body
+  &__body {
+  }
+  // .switcher-form__list
+  &__list {
+    list-style: none;
+  }
+  // .switcher-form__item
+  &__item {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+  // .switcher-form__key
+  &__key {
+    padding: 4px;
+    font-weight: 500;
+    line-height: math.div(26, 16);
+  }
+  // .switcher-form__value
+  &__value {
+    padding: 4px;
+    text-align: center;
+    line-height: math.div(26, 16);
+  }
+}
+.line {
+}
+.gold {
+}
